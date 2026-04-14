@@ -1,5 +1,56 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 225460032643146,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 567078833388356,
+					"parameters": {
+						"animation": "\"runD\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 864642754323832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 289944130412294,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 310520404037402,
+					"parameters": {
+						"animation": "\"idleD\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 117344147652596
+		}
+	],
 	"sid": 508720398876283
 }
